@@ -1,6 +1,9 @@
+body {
+    background-color: #FFFBFC !important;
+}
+
 .navMenu {
     background-color: #62c371e7;
-    
 }
 
 a {
@@ -15,4 +18,8 @@ h3 {
 .b-right {
     border-right: .15rem solid black;
 
+}
+
+.infoSection {
+    background-color: #EFEFEF;
 }

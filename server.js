@@ -18,6 +18,22 @@ app.get("/", (request, response) => {
     response.render("landing/landing.ejs")
 })
 
+app.get("/About", (request, response) => {
+    response.render("landing/about.ejs")
+})
+
+app.get("/Contact", (request, response) => {
+    response.render("landing/contact.ejs")
+})
+
+app.get("/Drivers", (request, response) => {
+    response.render("landing/drivers.ejs")
+})
+
+app.get("/Clients", (request, response) => {
+    response.render("landing/clients.ejs")
+})
+
 
 
 // App listener
