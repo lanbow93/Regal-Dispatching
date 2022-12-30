@@ -2,13 +2,17 @@ const mongoose = require("./connection");
 
 const contactSchema = new mongoose.Schema({
     name: String,
-    phone: String,
+    number: String,
+    type: String,
     email: String,
-    message: String
+    address: String,
+    additional: String,
+    state: String,
+    zipcode: String,
+    details: String
+}, {timestamps: true})
 
-})
-
-const Contact = mongoose.model("Contact", beingSchema);
+const Contact = mongoose.model("Contact", contactSchema);
 
 // Exporting model of beings
 module.exports = Contact;

@@ -17,9 +17,22 @@ h3 {
 
 .b-right {
     border-right: .15rem solid black;
-
 }
 
 .infoSection {
     background-color: #EFEFEF;
+}
+
+.formHalfTextbox {
+    width: 50%;
+    height: 2rem;
+}
+.formFullTextbox {
+    width: 100%;
+}
+
+button {
+    height: 2.5rem !important;
+    margin: 1rem 0 !important;
+    width: 50%;
 }

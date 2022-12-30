@@ -3,6 +3,7 @@ require("dotenv").config();
 const morgan = require("morgan");
 const express = require("express");
 const methodOverride = require("method-override")
+const Contact = require("./models/contact.js")
 
 // Creating application
 const app = express();
@@ -13,7 +14,12 @@ app.use(morgan("tiny"));
 app.use(express.urlencoded({extended: true}));
 app.use("/static", express.static("public"))
 
-// Initial page
+// Routes
+app.post("/", async (request, response) => {
+    const addContact = await Contact.create(request.body)
+    response.redirect(`/Confirmation`)
+})
+
 app.get("/", (request, response) => {
     response.render("landing/landing.ejs")
 })
@@ -32,6 +38,10 @@ app.get("/Drivers", (request, response) => {
 
 app.get("/Clients", (request, response) => {
     response.render("landing/clients.ejs")
+})
+
+app.get("/Confirmation", (request, response) => {
+    response.render("landing/confirmation.ejs")
 })
 
 
