@@ -6,6 +6,10 @@ body {
     background-color: #62c371e7;
 }
 
+.newFont {
+    font-family: 'Lobster', cursive;
+}
+
 a {
     color: #FFFBFC !important;
     font-size: 1.25rem !important;

@@ -36,8 +36,8 @@ app.get("/Drivers", (request, response) => {
     response.render("landing/drivers.ejs")
 })
 
-app.get("/Clients", (request, response) => {
-    response.render("landing/clients.ejs")
+app.get("/Shippers", (request, response) => {
+    response.render("landing/shippers.ejs")
 })
 
 app.get("/Confirmation", (request, response) => {
