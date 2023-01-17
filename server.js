@@ -4,6 +4,8 @@ const morgan = require("morgan");
 const express = require("express");
 const methodOverride = require("method-override")
 const Contact = require("./models/contact.js")
+const favicon = require("serve-favicon")
+const path = require("path")
 
 // Creating application
 const app = express();
@@ -13,6 +15,7 @@ app.use(methodOverride("_method"));
 app.use(morgan("tiny"));
 app.use(express.urlencoded({extended: true}));
 app.use("/static", express.static("public"))
+app.use(favicon(path.join(__dirname, 'public/images', 'favicon.ico')));
 
 // Routes
 app.post("/", async (request, response) => {
