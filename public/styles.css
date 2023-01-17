@@ -40,3 +40,18 @@ button {
     margin: 1rem 0 !important;
     width: 50%;
 }
+.toBold {
+    font-weight: bold;
+}
+
+p a{
+    text-decoration: none;
+    color: #0000EE !important;
+    font-weight: 500;
+
+}
+
+.detail {
+    color: #5151ee
+}
+
